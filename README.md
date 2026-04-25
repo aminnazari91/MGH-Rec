@@ -11,8 +11,11 @@ This work proposes a multi-task heterogeneous graph learning framework for recom
 
 # The framework consists of:
 A GCN-based branch for recommendation (rating prediction)
+
 A Heterogeneous Graph Transformer (HGT)-based branch for node classification
+
 A cross-attention mechanism for adaptive fusion of task-specific representations
+
 An end-to-end fine-tuning stage for joint optimization
 
 # Key Features
