@@ -30,30 +30,31 @@ Additionally, we enrich MovieLens interaction data using IMDb metadata to constr
 - Cross-attention fusion mechanism
 - Support for 100K and 1M MovieLens datasets
 
-# Key Features
-Multi-task learning with task-specific graph encoders
-Heterogeneous graph construction using MovieLens + IMDb data
-Independent pre-training to reduce negative task interference
-Bidirectional cross-attention for feature fusion
-Improved robustness against sparsity and noisy interactions
-
 # Architecture
 The proposed framework operates in three main stages:
-Graph Construction
-User–item interaction graph from MovieLens
-Semantic enrichment using IMDb metadata (actors, directors, relations)
-Dual-Branch Representation Learning
-GCN-based recommender branch
-HGT-based classification branch
-Cross-Attention Fusion
-Adaptive feature integration
+- Graph Construction
+- User–item interaction graph from MovieLens
+- Semantic enrichment using IMDb metadata (actors, directors, relations)
+- Dual-Branch Representation Learning
+- GCN-based recommender branch
+- HGT-based classification branch
+- Cross-Attention Fusion
+- Adaptive feature integration
 
 # Datasets
-MovieLens (rating data)
-IMDb (knowledge graph/metadata)
+- MovieLens (rating data)
+- IMDb (knowledge graph/metadata)
 
+# 🚀 How to Run
+
+1. Install dependencies
+      pip install -r requirements 
+2. Run main experiment (100K dataset)
+      Run_100k_Proposed.ipynb
+بخق 
 # Citation
 If you use this code, please cite:
+
 @article{nazari2026multi,
   title={A multi-task heterogeneous graph learning with cross-attention fusion for robust recommendation},
   author={Nazari, Amin and Mansoorizadeh, Muharram and Khotanlou, Hassan},
