@@ -48,9 +48,11 @@ The proposed framework operates in three main stages:
 # 🚀 How to Run
 
 1. Install dependencies
-      pip install -r requirements 
-2. Run main experiment (100K dataset)
-      Run_100k_Proposed.ipynb
+
+         pip install -r requirements 
+3. Run main experiment (100K dataset)
+   
+         Run_100k_Proposed.ipynb
 بخق 
 # Citation
 If you use this code, please cite:
