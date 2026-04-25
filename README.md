@@ -59,12 +59,8 @@ If you use this code, please cite:
 
          @article{nazari2026multi,
            title={A multi-task heterogeneous graph learning with cross-attention fusion for robust recommendation},
-           
            author={Nazari, Amin and Mansoorizadeh, Muharram and Khotanlou, Hassan},
-           
            journal={Scientific Reports},
-           
            year={2026},
-           
            publisher={Nature Publishing Group UK London}
          }
