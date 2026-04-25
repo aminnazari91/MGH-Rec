@@ -3,20 +3,32 @@
 # Multi-Task Heterogeneous Graph Learning with Cross-Attention Fusion for Robust Recommendation
 
 This repository contains the official implementation of the paper:
-# “A Multi-Task Heterogeneous Graph Learning with Cross-Attention Fusion for Robust Recommendation”
+“A Multi-Task Heterogeneous Graph Learning with Cross-Attention Fusion for Robust Recommendation”
 
-# Overview
+# 🧠 Overview
 
-This work proposes a multi-task heterogeneous graph learning framework for recommender systems that addresses key challenges such as data sparsity, cold-start problems, and task interference. The model integrates interaction data from MovieLens with semantic knowledge from IMDb to construct a rich heterogeneous graph and learns robust representations through a dual-branch architecture.
+This work introduces a multi-task heterogeneous graph learning framework for recommendation systems that jointly addresses:
 
-# The framework consists of:
-A GCN-based branch for recommendation (rating prediction)
+- Data sparsity
+- Cold-start problem
+- Negative transfer between tasks
+- Noisy interactions in user–item graphs
 
-A Heterogeneous Graph Transformer (HGT)-based branch for node classification
+We propose a dual-branch architecture:
 
-A cross-attention mechanism for adaptive fusion of task-specific representations
+- GCN-based branch for rating prediction (recommendation task)
+- HGT-based branch for node classification (semantic understanding)
+- Cross-attention module for adaptive fusion of representations
 
-An end-to-end fine-tuning stage for joint optimization
+Additionally, we enrich MovieLens interaction data using IMDb metadata to construct a heterogeneous graph with semantic entities (actors, directors, relations).
+
+# ⚙️ Key Features
+- Multi-task learning with independent graph encoders
+- Heterogeneous graph construction (MovieLens + IMDb)
+- GCN for interaction modeling
+- HGT for semantic representation learning
+- Cross-attention fusion mechanism
+- Support for 100K and 1M MovieLens datasets
 
 # Key Features
 Multi-task learning with task-specific graph encoders
